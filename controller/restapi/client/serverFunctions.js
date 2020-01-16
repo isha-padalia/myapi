@@ -116,7 +116,7 @@ exports.signin12 = async function (req,res,next){
                     console.log("In else")
                     res.send({
                         'msg':'error',
-                        'data':'Something went wrong!'        
+                        'data':'Invalid user name & password!'        
                     }); 
                 }
             }
