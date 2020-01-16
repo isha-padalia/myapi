@@ -2,4 +2,4 @@
 
 #### Run `node server.js`
 
-#### cloud link https://register-auth-project.herokuapp.com/
+#### demo link https://register-auth-project.herokuapp.com/
