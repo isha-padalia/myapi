@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  /* background-image: url('/w3images/forestbridge.jpg'); */
+  min-height: 100%;
+  background-position: center;
+}
+
+.button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+</style>
+<body>
+
+  <% 
+  try{
+  
+  if(req.session['Username'] == '' || req.session['Username'] == undefined) { 
+           
+    %>
+    <script>
+      window.location.href = '/'
+    </script>
+    <% 
+
+  }
+  else {
+  %>
+   <div class="w3-display-topleft w3-padding-large w3-xlarge">
+  
+    </div>
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo">welcome <%= req.session['Username'] %></h1>
+      <center><hr class="w3-border-grey" style="width:40%"><button id="logout">Back to login</button><br>
+      </center>
+      <!-- <p class="w3-large w3-center">35 days left</p> -->
+    </div>
+    <div class="w3-display-bottomleft w3-padding-large">
+    <!-- Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a> -->
+  </div>
+  <% 
+  
+  }}catch(e){
+      console.log(e);
+  }
+  %>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

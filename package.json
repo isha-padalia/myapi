@@ -1,0 +1,26 @@
+{
+  "name": "myapi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aes256": "^1.0.4",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "date-format": "^2.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "express-status-monitor": "^1.2.5",
+    "gridfs-stream": "^1.1.1",
+    "mongodb": "^3.2.4",
+    "mongoose": "^5.5.8",
+    "request": "^2.88.0"
+  }
+}
